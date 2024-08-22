@@ -87,11 +87,11 @@ async function runPuppeteerScript(formData) {
             const passwordFieldExists = await page.$('#password') !== null;
 
             if (emailFieldExists && passwordFieldExists) {
-                await page.type('#email', 'keatingarthur01@gmail.com');
+                await page.type('#email', 'you@gmail.com');
                 console.log(`Filled in email for ${site.base}`);
                 await new Promise(res => setTimeout(res, 2000));
 
-                await page.type('#password', 'Isearch@123');
+                await page.type('#password', 'you@password');
                 console.log(`Filled in password for ${site.base}`);
                 await new Promise(res => setTimeout(res, 2000));
 
